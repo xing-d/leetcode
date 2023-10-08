@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
-</head>
-
-<body></body>
-<script>
- // 定义 StockPrice 构造函数
+// 定义 StockPrice 构造函数
 var StockPrice = function() {
     this.map = new Map();  // 初始化一个 Map 来存储时间戳和价格
     this.obj = {
@@ -92,8 +80,3 @@ StockPrice.prototype.minimum = function() {
  * var param_3 = obj.maximum()  // 获取最大价格
  * var param_4 = obj.minimum()  // 获取最小价格
  */
-
-
-</script>
-
-</html>
