@@ -1,16 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
+// function mergeIntervals(intervals) {
+//     if (!intervals.length) {
+//         return [];
+//     }
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
-</head>
+//     // 根据每个区间的起始值对其进行排序
+//     intervals.sort((a, b) => a[0] - b[0]);
 
-<body></body>
-<script>
-   function mergeIntervals(intervals) {
+//     const merged = [intervals[0]];
+
+//     for (let i = 1; i < intervals.length; i++) {
+//         const currentInterval = intervals[i];
+//         const lastMergedInterval = merged[merged.length - 1];
+
+//         // 检查当前区间是否与上一个合并的区间重叠
+//         if (currentInterval[0] <= lastMergedInterval[1]) {
+//             // 合并两个区间
+//             merged[merged.length - 1] = [lastMergedInterval[0], Math.max(lastMergedInterval[1], currentInterval[1])];
+//         } else {
+//             // 如果没有重叠，将当前区间添加到合并的列表中
+//             merged.push(currentInterval);
+//         }
+//     }
+
+//     return merged;
+// }
+
+function mergeIntervals(intervals) {
     if (!intervals.length) {
         return [];
     }
@@ -45,7 +60,3 @@ const output2 = mergeIntervals(intervals2);
 
 console.log(output1);  // [[1, 6], [8, 10], [15, 18]]
 console.log(output2);  // [[1, 5]]
-
-</script>
-
-</html>
