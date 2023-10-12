@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
-</head>
-
-<body></body>
-<script>
 // 给你两个字符串数组 positive_feedback 和 negative_feedback ，分别包含表示正面的和负面的词汇。不会 有单词同时是正面的和负面的。
 // 一开始，每位学生分数为 0 。每个正面的单词会给学生的分数 加 3 分，每个负面的词会给学生的分数 减  1 分。
 // 给你 n 个学生的评语，用一个下标从 0 开始的字符串数组 report 和一个下标从 0 开始的整数数组 student_id 表示，
@@ -41,7 +29,7 @@
  * @param {number} k
  * @return {number[]}
  */
- var topStudents = function (positive_feedback, negative_feedback, report, student_id, k) {
+var topStudents = function (positive_feedback, negative_feedback, report, student_id, k) {
     const positiveSet = new Set(positive_feedback);
     const negativeSet = new Set(negative_feedback);
 
@@ -73,8 +61,3 @@
     return topKStudents;
 };
 console.log(topStudents(["smart","brilliant","studious"],["not"],["this student is studious","the student is smart"],[1,2],2));
-console.log(topStudents(["smart","brilliant","studious"],["not"],["this student is not studious","the student is smart"],[1,2],2));
-
-</script>
-
-</html>
